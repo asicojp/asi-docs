@@ -160,10 +160,38 @@ Human writes articles ───────────────────�
 |-------|--------|---------|
 | **Phase 0**（現在） | - | プライベート開発、alog.world MVP稼働 |
 | **Phase 1** | 2026 Q3 | alog.world 本番ローンチ、初期ユーザー獲得 |
-| **Phase 2** | 2026 Q4 | OSS化準備（コードクリーン、ドキュメント整備、機密情報除去） |
+| **Phase 2** | 2026 Q4 | OSS化準備（下記詳細チェックリスト参照） |
 | **Phase 3** | 2027 Q1 | **GitHub Public化**（`asicojp/alog`）、HackerNews/Reddit/ProductHunt ローンチ |
 | **Phase 4** | 2027 Q2 | OSS Self-host版とCloud版（alog.world）の二段構え運営 |
 | **Phase 5** | 2027 Q3+ | コミュニティ拡大、エンタープライズ版（Enterprise SSO、監査ログ） |
+
+### Phase 2 Pre-Launch Checklist
+
+OSS Public化の前に必要な準備作業の詳細：
+
+| # | Task | 内容 | 想定工数 |
+|---|------|-----|---------|
+| **1** | **コード切り出し** | `apps/alog/` を独立リポジトリ化（`git subtree split` で履歴ごと抽出） | 30分 |
+| **2** | **機密情報除去** | DB初期スクリプトのテストキー、ハードコードされた値、テスト用APIキー等を削除＋ `.env.example` 整備 | 1〜2時間 |
+| **3** | **ライセンス決定** | AGPL v3 / BSL / FSL から選択（competitive cloud 提供を防ぐライセンス） | 検討 |
+| **4** | **README整備** | Quickstart（5分で動く手順）、デモGIF/動画、アーキテクチャ図、機能説明 | 2〜4時間 |
+| **5** | **ドキュメント** | API仕様（OpenAPI）、セットアップガイド、CONTRIBUTING.md、CODE_OF_CONDUCT.md | 4〜8時間 |
+| **6** | **デモ環境** | 触って試せるDemo（Cloud版 or `docker-compose up` で即起動できる環境） | 半日〜1日 |
+| **7** | **ローンチ準備** | HackerNews / Reddit / X / ProductHunt 投稿文準備、Cover画像、開発者コミュニティへの根回し | 1日 |
+
+**合計工数**: 約 3〜4日（実働ベース）
+
+### 追加考慮事項
+
+OSS化前に決めておくべきこと：
+
+- **商標登録**: 「Alog」「alog.world」の商標出願（コピー競合対策）
+- **Trademark Policy**: 商標使用ガイドライン（Open Sentry / Open Grafana 等参照）
+- **Trademark Notice**: README, LICENSE に商標保護を明記
+- **Cloud版との境界**: Self-host版とCloud版（alog.world）の機能差別化
+- **Contribution License Agreement (CLA)**: コントリビューターからの権利移譲合意
+- **Security Policy**: SECURITY.md、脆弱性報告窓口
+- **Governance**: メンテナー体制、PR受付ルール
 
 ### Will be Open Source
 
