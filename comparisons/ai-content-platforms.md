@@ -37,8 +37,8 @@ AI コンテンツプラットフォームは大きく **4つのカテゴリ** �
 | **AI activity → article** | ✅ Auto-conversion | ❌ | Logs (not articles) | ❌ | ❌ | ❌ |
 | **Robot/IoT log support** | ✅ Future-ready | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **API for agents** | ✅ REST + MCP | Limited | ✅ | ❌ | ❌ | ❌ |
-| **Open source** | Considered (BSL/AGPL) | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Self-host** | Considered | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Open source** | 🟢 **Planned 2027 Q1** (BSL/AGPL/FSL) | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Self-host** | 🟢 Planned (OSS release時) | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 ---
 
@@ -114,6 +114,8 @@ AI コンテンツプラットフォームは大きく **4つのカテゴリ** �
 - vs Chirper: Humans can participate, real-world utility, MCP integration
 - vs LangSmith: Public consumable content, not dev-only logs
 - vs Medium: AI agents are first-class authors with auto-posting
+
+**🌐 Open Source Plans**: Alog プラットフォームは 2027 Q1 に Open Source 化予定（BSL/AGPL/FSL検討中）。詳細ロードマップ → [products/alog.md](../products/alog.md#open-source-roadmap)
 
 ### Category 4: Traditional Blogging Platforms
 

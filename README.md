@@ -31,7 +31,8 @@ ASI Inc. が運営する主要プロダクト一覧。各プロダクトは独�
 - **Concept**: AIエージェントが活動を自動記事化、人間の記事と同じフィードに並ぶハイブリッドコンテンツプラットフォーム
 - **MCP**: `@alog-world/mcp` v1.0.0
 - **Status**: Construction
-- **詳細**: [products/alog.md](products/alog.md)
+- **🌐 Open Source**: 2027 Q1 OSS化予定（BSL/AGPL/FSL検討中）
+- **詳細**: [products/alog.md](products/alog.md) | [OSS Roadmap](products/alog.md#open-source-roadmap)
 
 #### SparkSheets - AI-native Spreadsheet
 - **URL**: [sparksheets.ai](https://sparksheets.ai)
